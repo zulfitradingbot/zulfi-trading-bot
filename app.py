@@ -4,9 +4,29 @@ import numpy as np
 from datetime import datetime, timezone
 from pathlib import Path
 
-st.set_page_config(page_title="Quotex Signal Bot", page_icon="📈", layout="wide")
+st.set_page_config(page_title="Zulfi Trading Bot", page_icon="📈", layout="wide")
 
-st.title("Quotex Signal Bot")
+st.markdown("""<style>
+.stApp, [data-testid="stAppViewContainer"] {background: #080c0b; color: #eaf7f0;}
+[data-testid="stSidebar"] {background: #101a16; border-right: 1px solid #1c3b2d;}
+[data-testid="stHeader"] {background: rgba(8,12,11,.95);}
+h1,h2,h3 {color:#f1fff6 !important;}
+h1 {letter-spacing: .06em; text-shadow: 0 0 22px rgba(0,210,115,.16);}
+[data-testid="stMetric"] {background:#111c17; padding:16px; border:1px solid #214531; border-radius:12px;}
+[data-testid="stMetricValue"] {color:#29e087 !important;}
+[data-testid="stMetricLabel"] {color:#b6d2c0 !important;}
+.stButton > button[kind="primary"], .stButton > button {background:#087c45; color:#fff; border:1px solid #16c774; border-radius:9px;}
+.stButton > button:hover {background:#0b9d59; color:white; border-color:#32f29b;}
+[data-baseweb="select"] > div, [data-baseweb="input"] > div {background:#16241d !important; border-color:#27543a !important; color:#f4fff7 !important;}
+[data-testid="stAlert"] {border-radius:10px;}
+[data-testid="stDataFrame"] {border:1px solid #254332; border-radius:10px;}
+hr {border-color:#244734 !important;}
+.zulfi-brand {border-left:5px solid #21d87c; background:linear-gradient(90deg,#122b1e,#141615); padding:14px 18px; border-radius:8px; margin-bottom:18px;}
+.zulfi-green {color:#2ae486;font-weight:700;} .zulfi-red {color:#ff525c;font-weight:700;}
+</style>""", unsafe_allow_html=True)
+st.markdown('<div class="zulfi-brand"><span class="zulfi-green">▲ UP</span> &nbsp; / &nbsp; <span class="zulfi-red">▼ DOWN</span> &nbsp; • &nbsp; Signal-only research dashboard</div>', unsafe_allow_html=True)
+
+st.title("⚡ ZULFI TRADING BOT")
 st.caption("Signals only • No automatic trade execution • Prototype")
 
 st.warning(
